@@ -1,3 +1,0 @@
-I enjoy programming in Python.
-I am learning file I/O operations.
-I like solving problems.
