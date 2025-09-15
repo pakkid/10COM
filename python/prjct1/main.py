@@ -1,1 +1,0 @@
-print("harro i is chinese\ni is sebastian\ni lika da fry rye\ni very good at math: 7x8=",7*8,"\nhello i is sebastian i like doing math homework and eating fry rye and driving bad")
