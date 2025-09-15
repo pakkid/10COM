@@ -17,7 +17,6 @@ Welcome to the Goofy Ahhh Website Warehouse! This is a collection of all the wei
 ## Technologies Used
 
 - HTML, CSS, JavaScript
-- [Add any other frameworks/libraries used]
 
 ## Contributing
 
