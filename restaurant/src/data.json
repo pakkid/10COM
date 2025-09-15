@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ratatouille",
+    "image": "../images/ratatouille_confit.jpg",
+    "title": "Ratatouille Confit Byaldi",
+    "alt": "Ratatouille Confit Byaldi plated",
+    "description": "Our signature Ratatouille Confit Byaldi fresh from the oven.",
+    "credit": "Kitchen Team"
+  },
+  {
+    "id": "omelette",
+    "image": "../images/omelette.jpg",
+    "title": "Classic Omelette",
+    "alt": "Classic French omelette with herbs",
+    "description": "Classic omelette plated with herbs and butter.",
+    "credit": "Chef Colette"
+  },
+  {
+    "id": "bread",
+    "image": "../images/bread.jpg",
+    "title": "Bread Selection",
+    "alt": "Assorted artisan breads",
+    "description": "Freshly baked artisan breads cooling before service.",
+    "credit": "Bakery Station"
+  },
+  {
+    "id": "cheesecake",
+    "image": "../images/cheesecake.jpg",
+    "title": "Strawberry Cheesecake",
+    "alt": "Strawberry cheesecake slice",
+    "description": "Decadent strawberry cheesecake sensation garnished with fruit.",
+    "credit": "Pastry Chef"
+  }
+]

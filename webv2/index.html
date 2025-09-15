@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <title>Website?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="noselect" oncontextmenu="return false">
+
+    <header id="header" class="grad1">
+        <h1 id="heading-title">Website?</h1>
+        <nav>
+			<ul>
+				<li><a onclick="scrollSection(1);">Loerm ipsum</a></li>
+				<li><a onclick="scrollSection(2);">About</a></li>
+				<li><a onclick="scrollSection(3);">Yes?</a></li>
+				<li><a onclick="scrollSection(4);">That's crazy!</a></li>
+                <li><a onclick="teenPage()">Teen Page</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main id="main">
+        <section class="picky-section" id="section1">
+            <h2>Home</h2>
+            <div class="section-content">
+				<div class="text-section">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae magnam similique animi eos assumenda numquam, nostrum eveniet ea cum iste facere quam dolorum, recusandae suscipit distinctio cupiditate sit. Atque.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla optio iste autem at quis fuga rerum placeat? Commodi voluptates ratione maxime laborum quasi dicta quod? Velit fugit totam repudiandae.</p>
+				</div>
+            <img src="./images/home-1.jpg">
+			<img src="./images/home-2.jpg">
+			<img src="./images/home-3.jpg">
+            </div>
+        </section>
+
+        <section id="section2">
+            <h2>About</h2>
+            <div class="section-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, porro eius iure, autem, accusantium labore distinctio sit voluptatibus voluptatum quisquam incidunt recusandae corporis accusamus obcaecati aliquid necessitatibus harum aperiam reprehenderit.</p>
+                <iframe 
+                    width="560" height="315" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?amp;controls=0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="section3">
+            <h2>Yes?</h2>
+            <div class="section-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate, natus et excepturi fugit, officia facere assumenda nostrum voluptatum, temporibus itaque sunt magnam! Illum nemo modi, perferendis alias tempora recusandae.</p>
+                <img src="https://picsum.photos/406">
+				<img src="https://picsum.photos/407">
+				<img src="https://picsum.photos/408">
+            </div>
+        </section>
+
+        <section id="section4">
+            <h2>That's crazy!</h2>
+            <div class="section-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit voluptatum nesciunt iure commodi reprehenderit pariatur nobis aperiam quibusdam veritatis hic, ducimus voluptate, cum temporibus corrupti autem error dolor doloremque culpa?</p>
+                <img src="https://picsum.photos/409">
+				<img src="https://picsum.photos/410">
+				<img src="https://picsum.photos/411">
+            </div>
+        </section>
+        <footer id="footer1">
+            <p>&copy; 2024 <a href="https://github.com/pakkid" target="_blank">@pakkid GitHub</a></p>
+        </footer>
+    </main>
+	
+    <script>
+        window.addEventListener("load", function() {
+            window.scrollTo(0, 0); // Scroll to top on page load
+        });
+		
+        window.history.scrollRestoration = "manual"; // Disable scroll restoration
+    </script>
+	
+    <script src="js/smoothoperator.js"></script>
+	<script src="js/scrollSections.js"></script>
+	<script src="js/hideheader.js"></script>
+    <script>
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            window.location.href = "sorry.html";
+        }
+    </script>
+
+</body>
+</html>

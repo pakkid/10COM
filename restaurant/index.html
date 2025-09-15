@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ratatouille - Fine French Cuisine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/la_ratatouille.png" alt="la ratatouille logo" class="img-fluid" style="max-height: 40px;">
+                La Ratatouille
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dishes">Signature Dishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery/">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">La Ratatouille</h1>
+            <p class="lead mb-5">Welcome to La Ratatouille, the popular Parisian bistro of Alfredo Linguini-Gusteau and partners.</p>
+            <a href="#contact" class="btn btn-primary btn-lg px-4 me-2">Reservations</a>
+            <a href="#dishes" class="btn btn-outline-light btn-lg px-4">Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 scroll-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">About Us</h2>
+                    <p class="lead">After the closure of the world-class restaurant Gusteau’s, head chefs Colette Tatou and Alfredo Linguini-Gusteau, along with a private collaborator who prefers to be known only as The Little Chef, founded a new bistro in the heart of Paris where they continue to produce new culinary creations. La Ratatouille is proudly supported by renowned food critic Anton Ego.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Team Member 1 -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <img src="./images/linguini.jpg" class="card-img-top h-50" alt="Alfredo Linguini-Gusteau">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfredo Linguini-Gusteau</h5>
+                            <p class="card-text">Linguini is the only son of celebrated chef Auguste Gusteau and Renata Linguini. Full of false modesty, he insists that he has no talent at all, and is no good with food or words. Once the drawcard of Gusteau’s restaurant, he now manages the front-of-house, and has been known to wait tables whilst wearing roller-skates.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <img src="./images/tatou.png" class="card-img-top h-50" alt="Colette Tatou">
+                        <div class="card-body">
+                            <h5 class="card-title">Colette Tatou</h5>
+                            <p class="card-text">The toughest cook in the kitchen, chef Tatou has worked long and hard to penetrate the cutthroat world of French haute cuisine, becoming the only female chef at Gusteau’s. She is a firm believer in Gusteau’s motto, “Anyone can cook”, and has committed all of his recipes to heart.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <img src="./images/ratatouille.png" class="card-img-top h-50" alt="The Little Chef">
+                        <div class="card-body">
+                            <h5 class="card-title">The Little Chef</h5>
+                            <p class="card-text">The artist behind several of La Ratatouille’s signature dishes, The Little Chef prefers to remain unidentified, so that aspiring creators everywhere can imagine themselves in The Little Chef’s position, having risen from unbelievably humble origins. There are rumours that The Little Chef is actually the rat depicted by La Ratatouille’s signage, but customers can be sure that no two-dimensional black rats work at La Ratatouille, and our staff are fully compliant with all hygiene laws and health and safety regulations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section id="dishes" class="py-5 bg-light scroll-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">Signature Dishes</h2>
+                    <p class="lead">Our most celebrated creations</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Dish 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/soup.jpg" class="card-img-top" alt="Tomato, Leek & Potato Soup">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomato, Leek & Potato Soup</h5>
+                            <p class="card-text">A fresh twist on an old classic, this soup was first created when Linguini was merely a plongeur at Gusteau’s, and he found himself having to improvise after knocking over a cauldron. Famously reviewed by Solene LeClaire, this is the soup that started it all.</p>
+                            <span class="badge bg-primary">Vegetarian</span>
+                            <span class="badge bg-primary">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 2 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/sweetbreads.jpg" class="card-img-top" alt="Sweetbreads">
+                        <div class="card-body">
+                            <h5 class="card-title">Sweetbreads Special</h5>
+                            <p class="card-text">A forgotten favourite of Chef Auguste Gusteau, this complicated mélange of veal stomach, seaweed and cuttlefish is a fresh surprise from an old master.</p>
+                            <span class="badge bg-primary ">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 3 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/ratatouille_confit.jpg" class="card-img-top" alt="Ratatouille Confit Byaldi">
+                        <div class="card-body">
+                            <h5 class="card-title">Ratatouille Confit Byaldi</h5>
+                            <p class="card-text">This traditional peasant’s dish is guaranteed to instantly transport you to the nostalgic days of your childhood and rekindle your passion for a good meal. A favourite of critic and patron Anton Ego. One can never get too familiar with vegetables!</p>
+                            <span class="badge bg-primary">Vegan</span>
+                            <span class="badge bg-primary">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 4 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/omelette.jpg" class="card-img-top" alt="Classic Omelette">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Omelette</h5>
+                            <p class="card-text">An homage to the first meal shared between Linguini and The Little Chef, this dish serves as a reminder that sometimes trust is rewarded.</p>
+                            <span class="badge bg-primary">Vegetarian Option</span>
+                            <span class="badge bg-primary">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 5 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/mushroom.jpg" class="card-img-top" alt="Lightning Mushrooms">
+                        <div class="card-body">
+                            <h5 class="card-title">Lightning Mushrooms</h5>
+                            <p class="card-text">A world first, these chanterelle mushrooms are caked in tomme de chèvre du pays (valley goat’s cheese) and tied together with rosemary and saffron. The mushrooms are then cooked with a unique method that creates a popping, zapping sensation in the mouth. Seasonal. Not a dish to be attempted at home!</p>
+                            <span class="badge bg-primary">Gluten-Free</span>
+                            <span class="badge bg-primary">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 6 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/cheesecake.jpg" class="card-img-top" alt="Strawberry Cheesecake Sensation">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Cheesecake Sensation</h5>
+                            <p class="card-text">The creamy, salty-sweet, oaky nuttiness of the cheese combines with the sweet, crisp flavour of strawberries and grapes, with a slight tang on the finish, to conjure a sense of the infinite discoveries to be made by stopping to savour the world around you.</p>
+                            <span class="badge bg-primary">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 7 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+                    <div class="card dish-card h-100">
+                        <img src="./images/bread.jpg" class="card-img-top" alt="Freshly Baked Bread Selection">
+                        <div class="card-body">
+                            <h5 class="card-title">Freshly Baked Bread Selection</h5>
+                            <p class="card-text">How do you tell how good bread is without tasting it? Not by the smell, not by the look, but by the sound of the crust. Oh, symphony of crackle! Only great bread sounds this way.</p>
+                            <span class="badge bg-primary">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5 scroll-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">Reviews</h2>
+                    <p class="lead">What our guests are saying about their dining experience</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Review 1 -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column h-100">
+                            <p class="card-text mb-4">Last night, I experienced something new: an extraordinary meal from a singularly unexpected source. To say that both the meal and its maker have challenged my preconceptions about fine cooking is a gross understatement. They have rocked me to my core.</p>
+                            <div class="mt-auto">
+                                <h6 class="card-title mb-0">- Anton Ego</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column h-100">
+                            <p class="card-text mb-4">The soup was a revelation! A spicy yet subtle taste experience.</p>
+                            <div class="mt-auto">
+                                <h6 class="card-title mb-0">- Solene LeClaire</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="col-md-4">
+                    <div class="card team-card h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column h-100">
+                            <p class="card-text mb-4">It is difficult to imagine more humble origins than those of the genius now cooking at Gusteau’s, who is, in this critic’s opinion, nothing less than the finest chef in France. I will be returning to Gusteau’s soon, hungry for more.</p>
+                            <div class="mt-auto">
+                                <h6 class="card-title mb-0">- Anton Ego</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- extra sections -->
+    <!--
+    <section id="section-name" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">Section Title</h2>
+                    <p class="lead">Section subtitle</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Content goes here</p>
+                </div>
+                <div class="col-md-6">
+                    <p>More content here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 scroll-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Contact Us</h2>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label required">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label required">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label required">Subject</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="">Please select...</option>
+                                            <option value="reservation">Reservation</option>
+                                            <option value="private-event">Private Event</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label required">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required placeholder="Please tell us how we can help you (minimum 10 characters)"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <div class="form-text mb-3">
+                                            <span class="text-danger">*</span> Required fields
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-lg px-4" id="submitBtn">
+                                            <span class="btn-text">Send Message</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">La Ratatouille</h5>
+                    <p>Bringing the authentic taste of France to your table since 2005.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Sitemap</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#about">About</a></li>
+                        <li class="mb-2"><a href="#dishes">Menu</a></li>
+                        <li class="mb-2"><a href="#reviews">Reviews</a></li>
+                        <li class="mb-2"><a href="#contact">Contact</a></li>
+                        <li class="mb-2"><a href="gallery/">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Hours</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2">Mon-Fri: 11am-10pm</li>
+                        <li class="mb-2">Sat: 10am-11pm</li>
+                        <li class="mb-2">Sun: 10am-9pm</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Contact Info</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Rue de Paris, New York, NY</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (212) 555-1234</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@laratatouille.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2025 <a class="text-white" href="https://github.com/pakkid" target="_blank">Pakkid</a>. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white-50 me-2">Privacy Policy</a>
+                        <a href="#" class="text-white-50">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/scripts.js"></script>
+</body>
+</html>

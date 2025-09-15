@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ratatouille - Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/la_ratatouille.png" alt="la ratatouille logo" class="img-fluid" style="max-height: 40px;">
+                La Ratatouille
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#dishes">Signature Dishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../gallery/">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="display-5 fw-bold">Gallery</h1>
+                    <p class="lead mb-0">A glimpse into our kitchen and creations</p>
+                </div>
+            </div>
+
+            <div class="row g-4" id="galleryGrid">
+                <!-- gallery cards will be injected by gallery.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="position-relative text-center bg-dark">
+                        <img id="lightboxImage" class="w-100 lightbox-img bg-black" alt="">
+                        <button type="button" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-2 px-3" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-2 px-3" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="p-3">
+                        <h5 id="lightboxTitle" class="mb-2"></h5>
+                        <p id="lightboxDesc" class="mb-0 small text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">La Ratatouille</h5>
+                    <p>Bringing the authentic taste of France to your table since 2005.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Sitemap</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="../#">Home</a></li>
+                        <li class="mb-2"><a href="../#about">About</a></li>
+                        <li class="mb-2"><a href="../#dishes">Menu</a></li>
+                        <li class="mb-2"><a href="../#reviews">Reviews</a></li>
+                        <li class="mb-2"><a href="../#contact">Contact</a></li>
+                        <li class="mb-2"><a href="../gallery/">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Hours</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2">Mon-Fri: 11am-10pm</li>
+                        <li class="mb-2">Sat: 10am-11pm</li>
+                        <li class="mb-2">Sun: 10am-9pm</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Contact Info</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Rue de Paris, New York, NY</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (212) 555-1234</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@laratatouille.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2025 <a class="text-white" href="https://github.com/pakkid" target="_blank">Pakkid</a>. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white-50 me-2">Privacy Policy</a>
+                        <a href="#" class="text-white-50">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../src/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* Importing Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.grad1 {
+    width:100%;
+    background-color: #1fc8db; /* For browsers that do not support gradients */        
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    color:rgb(127, 255, 255);
+    opacity:0.95;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+  border: 2px solid #232E33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+	overflow-y: auto; /* Enable vertical scrolling on the body */
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #bc70a4;
+    --sb-size: 15px;
+}
+
+header {
+    background-color: #123C24;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.6s ease;
+    padding: 10px 0;
+}
+
+header.hidden {
+    transform: translateY(-101%); /* Move the header out of view */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+	 cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Main styling */
+main {
+    flex: 1; /* Ensure main takes up all available space */
+    width: 100%;
+    position: relative;
+}
+
+section {
+    height: 100vh; /* Each section takes full height */
+    padding: 0;
+    padding-top: 5%; /* Extra space to prevent overlap */
+	 padding-left: 5%;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+section p {
+	padding-right: 50%;
+    text-align: top-left; 
+}
+
+.picky-section {
+	padding-top: 9.3%;
+}
+
+.big-ass {
+	max-width: 18%;
+}
+
+section img {
+	height: auto;
+	top: 0;
+	right: 0;
+	text-align: top-right;
+	max-width: 30%;
+	max-height:100%;
+	object-fit: contain;
+	border-radius: 8px;
+	box-shadow: 0 8px 22px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    padding: 1px 0;  /* Adjust as needed */
+    margin: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 500;
+}
+
+a {
+    color: white;
+}
+
